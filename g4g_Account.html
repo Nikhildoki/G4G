@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>amar</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Work+Sans:ital,wght@0,300;1,200;1,300&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="navbar">
+					<div class="logo">
+					<a href="index.html"><img src="g4g_logo1.png" width="125px"></a>
+				    </div>
+					<nav>
+						<ul id="menuItems">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="Products.html">Product</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">contact</a></li>
+							
+						</ul>
+					</nav>
+					<a href=""><img src="card_logo.png" width="30px"></a>
+					<img src="menu_logo.png" class="menu-icon" onclick="menutoggle()">
+				</div>
+			</div>
+			<div class="row-1">
+				<div class="col-1">
+                  <img src="cart.png" width="380px">
+				</div>
+				<!----Account---->
+				<div class="col-1">
+                    <div id='login-form'class='login-page'>
+                        <div class="form-box">
+                            <div class='button-box'>
+                            	<div id='btn'></div>
+                                <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                                <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                            </div>
+                             <!----login---->
+                            <form id='login' class='input-group-login' action="login.php" method="post" >
+                                <input type='text'class='input-field' name="email" id='email' placeholder='Email Id' required>
+		                        <input type='password'class='input-field'name="password" id='password' placeholder='Enter Password' required>
+		                        <input type='checkbox'class='check-box'><span>Remember Password</span>
+		                        <button type='submit'class='submit-btn'>Log in</button>
+		                    </form>
+		                      <!----register---->
+		                    <form id='register' class='input-group-register' action="register.php" method="POST">
+		                            <input type='text'class='input-field'name="Firstname" id='Firstname' placeholder='First Name' required>
+		                            <input type='text'class='input-field' name="lastname" id='lastname' placeholder='Last Name ' required>
+		                            <input type='email'class='input-field'name="email" id='email' placeholder='Email Id' required>
+		                            <input type='password'class='input-field'name="password" id='password' placeholder='Enter Password' required>
+		                            <input type='password'class='input-field'name="cpassword" id='cpassword' placeholder='Confirm Password'  required>
+		                            <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+                                    <button type='submit' class='submit-btn' onclick="return validate()">Register</button>
+	                        </form>
+                        </div>
+                    </div>
+                </div>
+			</div>
+			 <script>
+			 <!----login---->
+        var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+	<script><!----register---->
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+		</header>
+		<!----foter--->
+         <footer>
+			 
+         	<div class="container">
+         		<ul>
+         			<a href="#"></a>
+
+         		</ul>
+         	</div>
+         </footer>
+         <!------- js for toggle menu------->
+         <script type="text/javascript">
+         	var menuItems=document.getElementById('menuItems')
+         	menuItems.style.maxHeight="0px"
+         	function menutoggle(){
+         		if(menuItems.style.maxHeight=="0px"){
+         			menuItems.style.maxHeight="200px"
+
+         		}
+         		else{
+         			menuItems.style.maxHeight="0px"
+         		}
+         	}
+			 function validate(){
+				var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("cpassword").value;
+        if (password != confirmPassword) {
+			alert(confirmpassword);
+            return false;
+        }
+        return true;
+			 }
+			 <!---dialog flow script-->
+         </script>
+		 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+		 <df-messenger
+		   intent="WELCOME"
+		   chat-title="G4G_BOT"
+		   agent-id="02685fdc-8da0-4368-827e-8fe4ca02da9e"
+		   language-code="en"
+		 ></df-messenger>
+		 <style>
+			df-messenger {
+			 --df-messenger-bot-message: #3f93ec;
+			 --df-messenger-button-titlebar-color: #cc83b2;
+			 --df-messenger-chat-background-color: hsla(0, 60%, 98%, 0.575);
+			 --df-messenger-font-color: rgba(3, 13, 4, 0.963);
+			 --df-messenger-send-icon: #878fac;
+			 --df-messenger-user-message: #91f3b2;
+			}
+		  </style>
+		  
+	</body>
+</html>

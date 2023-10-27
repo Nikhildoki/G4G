@@ -1,0 +1,916 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>products</title>
+   <!-- custom css file link  -->
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <!-- font awesome cdn link  -->
+    <script src="https://kit.fontawesome.com/a46b5c1927.js" crossorigin="anonymous"></script>
+   <style>
+     .form-submit-button {
+      position: relative;
+  top: 43px;
+  left: 710px;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.form-submit-button:hover {background-color: #3e8e41}
+
+.form-submit-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.form-submit-button1 {
+background: #0066A2;
+color: white;
+border-style: outset;
+border-color: #0066A2;
+height: 50px;
+width: 100px;
+font: bold15px arial,sans-serif;
+text-shadow: none;
+position: relative;
+  top: 23px;
+  left: 110px;
+}
+.form-submit-button2 {
+background: #f5f7f8;
+color: rgb(18, 18, 18);
+border-style: outset;
+border-color: #0066A2;
+height: 30px;
+width: 200px;
+font: bold15px arial,sans-serif;
+text-shadow: none;
+position: relative;
+  top: 23px;
+  left: 110px;
+}
+.form-submit-button3 {
+background: #0066A2;
+color: white;
+border-style: outset;
+border-color: #0066A2;
+height: 50px;
+width: 100px;
+font: bold15px arial,sans-serif;
+text-shadow: none;
+}
+   </style>
+</head>
+<body>
+  <header>
+      <div class="container-1">
+        <div class="navbar">
+          <div class="logo">
+          <a href="index.html"><img src="g4g_logo1.png" width="125px"></a>
+            </div>
+          <nav>
+            <ul id="menuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="g4g_Account.html">contact</a></li>
+            </ul>
+          </nav>
+          <a href=""><img src="card_logo.png" width="30px"></a>
+          <img src="menu_logo.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+      </div>
+      <form action="resultsample.php " method="get" id="nameform">
+   <!--PULSES products--->
+<div class="container">
+
+   <h3 class="title"> PULSES </h3>
+
+   <div class="products-container">
+
+      <div class="product" >
+         <img src="dals/chana_dal.jpg" alt="">
+         <h3>Chana Dal</h3>
+         <div class="price">Rs100.00</div>
+         <div class="Quantite">
+           <lable> Kgs:</lable>
+           <input type="number" min="1" max="10" value="1">
+         </div>
+         <div class="select-card">
+          <input type='checkbox'class="check-box" name='product[]' value="1" >
+          <label for="fname" class="form-submit-button3" for="1">Add cart </label>
+        </div>
+      </div>
+
+      <div class="product" >
+         <img src="dals/kabuli-chana.png" alt="">
+         <h3>Kabuli Chana</h3>
+         <div class="price">Rs116.00Rs</div>
+         <div class="Quantity">
+           <lable>kgs :</lable>
+           <input type="number" min="1" max="10" value="1">
+         </div>
+         <div class="select-card">
+          <input type='checkbox'class="check-box" name='product[]' value="2">
+          <label for="fname" class="form-submit-button3" for="2">Add cart </label>
+        </div>
+      </div>
+
+      <div class="product" >
+         <img src="dals/Moong-Bean-Green-Split.jpg" alt="" width="250px">
+         <h3>Green Beans</h3>
+         <div class="price">110.00Rs</div>
+         <div class="Quantity">
+           <lable>kgs :</lable>
+           <input type="number" min="1" max="10" value="1">
+         </div>
+         <div class="select-card">
+          <input type='checkbox'class="check-box" name='product[]' value="3">
+          <label for="fname" class="form-submit-button3" for="3">Add cart </label>
+        </div>
+      </div>
+
+      <div class="product" data-name="p-4">
+         <img src="dals/moong-dal (1).jpg" alt="" width="250px">
+         <h3>Moong Dal</h3>
+         <div class="price">94.00Rs</div>
+         <div class="Quantity">
+           <lable>kgs :</lable>
+           <input type="number" min="1" max="10" value="1">
+         </div>
+         <div class="select-card">
+          <input type='checkbox'class="check-box" name='product[]' value="4">
+          <label for="fname" class="form-submit-button3" for="4">Add cart </label>
+        </div>
+      </div>
+
+      <div class="product" >
+         <img src="dals/Moth-bean.jpg" alt="" width="250px">
+         <h3>Moth Bean</h3>
+         <div class="price">195.00Rs</div>
+         <div class="Quantity">
+           <lable>kgs :</lable>
+           <input type="number" min="1" max="10" value="1">
+         </div>
+         <div class="select-card">
+          <input type='checkbox'class="check-box" name='product[]' value="5">
+          <label for="fname" class="form-submit-button3" for="5">Add cart </label>
+        </div>
+      </div>
+
+      <div class="product" >
+         <img src="dals/red beans.jpg" alt="">
+         <h3>Red Beans</h3>
+         <div class="price">120.00Rs</div>
+         <div class="Quantity">
+           <lable>kgs :</lable>
+           <input type="number" min="1" max="10" value="1">
+         </div>
+         <div class="select-card">
+          <input type='checkbox'class="check-box" name='product[]' value="6">
+          <label for="fname" class="form-submit-button3" for="6">Add cart </label>
+        </div>
+      </div>
+    </div>
+    </div>
+
+   </div>
+
+</div>
+  <!--- oil products---> 
+<div class="container">
+
+   <h3 class="title"> EDIBLE OILS </h3>
+
+   <div class="products-container">
+
+      <div class="product" >
+         <img src="oils/Avocado oil.jpg" alt="">
+         <h3>Avacado Oil</h3>
+         <div class="price">192Rs.00</div>
+         <div class="Quantity">
+           <lable>ltrs :</lable>
+           <input type="number" min="1" max="10" value="1">
+         </div>
+         <div class="select-card">
+          <input type='checkbox'class="check-box" name='product[]' value="11">
+          <label for="fname" class="form-submit-button3" for="11">Add cart </label>
+        </div>
+      </div>
+
+      <div class="product" >
+         <img src="oils/coconut-oil.jpg" alt="">
+         <h3>Cocount Oil</h3>
+         <div class="price">187Rs.00</div>
+         <div class="Quantity">
+           <lable>ltrs :</lable>
+           <input type="number" min="1" max="10" value="1">
+         </div>
+         <div class="select-card">
+          <input type='checkbox'class="check-box" name='product[]' value="12">
+          <label for="fname" class="form-submit-button3" for="12">Add cart </label>
+        </div>
+      </div>
+
+      <div class="product" >
+         <img src="oils/crisco oil.jpg" alt="">
+         <h3>Crisco Oil</h3>
+         <div class="price">462.00Rs</div>
+         <div class="Quantity">
+           <lable>ltrs :</lable>
+           <input type="number" min="1" max="10" value="1">
+         </div>
+         <div class="select-card">
+          <input type='checkbox'class="check-box" name='product[]' value="13">
+          <label for="fname" class="form-submit-button3" for="13">Add cart </label>
+        </div>
+      </div>
+
+      <div class="product" data-name="p-4">
+         <img src="oils/fortune rice bran oil.png" alt="">
+         <h3>Fortune Rice Brand oil</h3>
+         <div class="price">153.00Rs</div>
+         <div class="Quantity">
+           <lable>ltrs :</lable>
+           <input type="number" min="1" max="10" value="1">
+         </div>
+         <div class="select-card">
+          <input type='checkbox'class="check-box" name='product[]' value="14">
+          <label for="fname" class="form-submit-button3" for="14">Add cart </label>
+        </div>
+      </div>
+
+      <div class="product" >
+         <img src="oils/fortune sunlite oil.jpg" alt="">
+         <h3>Fortune Sunlite Oil</h3>
+         <div class="price">105.00Rs</div>
+         <div class="Quantity">
+           <lable>ltrs :</lable>
+           <input type="number" min="1" max="10" value="1">
+         </div>
+         <div class="select-card">
+          <input type='checkbox'class="check-box" name='product[]' value="15">
+          <label for="fname" class="form-submit-button3" for="15">Add cart </label>
+        </div>
+      </div>
+
+      <div class="product" >
+         <img src="oils/gold-winner oil.png" alt="">
+         <h3>Gold Winner Oil</h3>
+         <div class="price">168.00Rs</div>
+         <div class="Quantity">
+           <lable>ltrs :</lable>
+           <input type="number" min="1" max="10" value="1">
+         </div>
+         <div class="select-card">
+          <input type='checkbox'class="check-box" name='product[]' value="16">
+          <label for="fname" class="form-submit-button3" for="16">Add cart </label>
+        </div>
+      </div>
+      <div class="product" >
+        <img src="oils/sesame oil.jpg" alt="">
+        <h3>Sesame Oil</h3>
+        <div class="price">49.00Rs</div>
+        <div class="Quantity">
+          <lable>ltrs :</lable>
+          <input type="number" min="1" max="10" value="1">
+        </div>
+        <div class="select-card">
+          <input type='checkbox'class="check-box" name='product[]' value="17">
+          <label for="fname" class="form-submit-button3" for="17">Add cart </label>
+       </div>
+      </div>
+       </div>
+       </div>
+
+      
+
+   </div>
+
+</div>
+                 <!--- vegetables products---> 
+<div class="container">
+
+  <h3 class="title"> VEGETABLES </h3>
+
+  <div class="products-container">
+
+     <div class="product" >
+        <img src="Veggies/4-2-onion-png.png" alt="">
+        <h3>Onions</h3>
+        <div class="price">30.00Rs</div>
+        <div class="Quantity">
+          <lable>kgs :</lable>
+          <input type="number" min="1" max="10" value="1">
+        </div>
+        <div class="select-card">
+          <input type='checkbox'class="check-box" name='product[]' value="22">
+          <label for="fname" class="form-submit-button3" for="22">Add cart </label>
+       </div>
+     </div>
+
+     <div class="product" >
+        <img src="Veggies/green-chilli_.jpg" alt="" width="250px">
+        <h3>Green Chillies</h3>
+        <div class="price">72.00Rs</div>
+        <div class="Quantity">
+          <lable>kgs :</lable>
+          <input type="number" min="1" max="10" value="1">
+        </div>
+        <div class="select-card">
+          <input type='checkbox'class="check-box" name='product[]' value="23">
+          <label for="fname" class="form-submit-button3" for="23">Add cart </label>
+       </div>
+     </div>
+
+     <div class="product" >
+        <img src="Veggies/carrots.webp" alt="">
+        <h3>Carrots</h3>
+        <div class="price">50.00Rs</div>
+        <div class="Quantity">
+          <lable>kg :</lable>
+          <input type="number" min="1" max="10" value="1">
+        </div>
+        <div class="select-card">
+          <input type='checkbox'class="check-box" name='product[]' value="24">
+          <label for="fname" class="form-submit-button3" for="24">Add cart </label>
+       </div>
+     </div>
+
+     <div class="product" data-name="p-4">
+        <img src="Veggies/brinjal.jpg" alt="">
+        <h3>Brinjal</h3>
+        <div class="price">40.00Rs</div>
+        <div class="Quantity">
+          <lable>kgs :</lable>
+          <input type="number" min="1" max="10" value="1">
+        </div>
+        <div class="select-card">
+        <input type='checkbox'class="check-box">
+         <a href="#"><button >Add card</button></a>
+       </div>
+     </div>
+
+     <div class="product" >
+        <img src="Veggies/tomato.jpg" alt="">
+        <h3>Tomato</h3>
+        <div class="price">40.00Rs</div>
+        <div class="Quantity">
+          <lable>kgs :</lable>
+          <input type="number" min="1" max="10" value="1">
+        </div>
+        <div class="select-card">
+        <input type='checkbox'class="check-box">
+         <a href="#"><button >Add card</button></a>
+       </div>
+     </div>
+  </div>
+
+</div>
+<div class="container">
+
+  <h3 class="title"> VEGETABLES </h3>
+
+  <div class="products-container">
+
+     <div class="product" >
+        <img src="Veggies/ladies-finge.png" alt="">
+        <h3>Ladies Fingers</h3>
+        <div class="price">35.00Rs</div>
+        <div class="Quantity">
+          <lable>kgs :</lable>
+          <input type="number" min="1" max="10" value="1">
+        </div>
+        <div class="select-card">
+        <input type='checkbox'class="check-box">
+         <a href="#"><button >Add card</button></a>
+       </div>
+     </div>
+
+     <div class="product" >
+        <img src="Veggies/pumpkin.jpg" alt="">
+        <h3>Pumpkin</h3>
+        <div class="price">20.00Rs</div>
+        <div class="Quantity">
+          <lable>kgs :</lable>
+          <input type="number" min="1" max="10" value="1">
+        </div>
+        <div class="select-card">
+        <input type='checkbox'class="check-box">
+         <a href="#"><button >Add card</button></a>
+       </div>
+     </div>
+
+     <div class="product" >
+        <img src="Veggies/capsicum.jpg" alt="" width="300px">
+        <h3>Capsicum</h3>
+        <div class="price">55.00Rs</div>
+        <div class="Quantity">
+          <lable>kgs :</lable>
+          <input type="number" min="1" max="10" value="1">
+        </div>
+        <div class="select-card">
+        <input type='checkbox'class="check-box">
+         <a href="#"><button >Add card</button></a>
+       </div>
+     </div>
+
+     <div class="product" data-name="p-4">
+        <img src="Veggies/frozen-drumstic.jpg" alt="" width="300px">
+        <h3>Drumstics</h3>
+        <div class="price">60.00Rs</div>
+        <div class="Quantity">
+          <lable>kgs :</lable>
+          <input type="number" min="1" max="10" value="1">
+        </div>
+        <div class="select-card">
+        <input type='checkbox'class="check-box">
+         <a href="#"><button >Add card</button></a>
+       </div>
+     </div>
+
+     <div class="product" >
+        <img src="Veggies/Cucumber.png" alt="">
+        <h3>Cucumber</h3>
+        <div class="price">30.00Rs</div>
+        <div class="Quantity">
+          <lable>kgs :</lable>
+          <input type="number" min="1" max="10" value="1">
+        </div>
+        <div class="select-card">
+        <input type='checkbox'class="check-box">
+         <a href="#"><button >Add card</button></a>
+       </div>
+     </div>
+  </div>
+  </div>
+  <div class="container">
+
+    <h3 class="title"> VEGETABLES </h3>
+  
+    <div class="products-container">
+  
+       <div class="product" >
+          <img src="Veggies/f-Cabbage.webp" alt="">
+          <h3>Cabbage</h3>
+          <div class="price">25.00Rs</div>
+          <div class="Quantity">
+            <lable>kgs :</lable>
+            <input type="number" min="1" max="10" value="1">
+          </div>
+          <div class="select-card">
+          <input type='checkbox'class="check-box">
+           <a href="#"><button >Add card</button></a>
+         </div>
+       </div>
+  
+       <div class="product" >
+          <img src="Veggies/Green-bean-l.jpg" alt="">
+          <h3>Green Bean</h3>
+          <div class="price">80.00Rs</div>
+          <div class="Quantity">
+            <lable>kgs :</lable>
+            <input type="number" min="1" max="10" value="1">
+          </div>
+          <div class="select-card">
+          <input type='checkbox'class="check-box">
+           <a href="#"><button >Add card</button></a>
+         </div>
+       </div>
+  
+       <div class="product" >
+          <img src="Veggies/snake-gourd.jpg" alt="">
+          <h3>Snake Gaurd</h3>
+          <div class="price">25.00Rs</div>
+          <div class="Quantity">
+            <lable>kgs :</lable>
+            <input type="number" min="1" max="10" value="1">
+          </div>
+          <div class="select-card">
+          <input type='checkbox'class="check-box">
+           <a href="#"><button >Add card</button></a>
+         </div>
+       </div>
+  
+       <div class="product" data-name="p-4">
+          <img src="Veggies/Green-bean-l.jpg" alt="">
+          <h3>Beans</h3>
+          <div class="price">25.00Rs</div>
+          <div class="Quantity">
+            <lable>kgs  :</lable>
+            <input type="number" min="1" max="10" value="1">
+          </div>
+          <div class="select-card">
+          <input type='checkbox'class="check-box">
+           <a href="#"><button >Add card</button></a>
+         </div>
+       </div>
+    </div>
+    </div>
+    
+</div>
+</div>
+
+<!--fruits-->
+      <div class="container">
+
+        <h3 class="title"> Fruits </h3>
+      
+        <div class="products-container">
+      
+           <div class="product" >
+              <img src="FRUITS/Guava-Taste.webp" alt="">
+              <h3>Gauva</h3>
+              <div class="price">40.00Rs</div>
+              <div class="Quantity">
+                <lable>kgs :</lable>
+                <input type="number" min="1" max="10" value="1">
+              </div>
+              <div class="select-card">
+              <input type='checkbox'class="check-box">
+               <a href="#"><button >Add card</button></a>
+             </div>
+           </div>
+      
+           <div class="product" >
+              <img src="FRUITS/custard apple.webp" alt="">
+              <h3>Custurd Apples</h3>
+              <div class="price">140.00Rs</div>
+              <div class="Quantity">
+                <lable>kgs :</lable>
+                <input type="number" min="1" max="10" value="1">
+              </div>
+              <div class="select-card">
+              <input type='checkbox'class="check-box">
+               <a href="#"><button >Add card</button></a>
+             </div>
+           </div>
+      
+           <div class="product" >
+              <img src="FRUITS/pineapple.jpg" alt="">
+              <h3>Pine Apples</h3>
+              <div class="price">90.00Rs</div>
+              <div class="Quantity">
+                <lable>kgs :</lable>
+                <input type="number" min="1" max="10" value="1">
+              </div>
+              <div class="select-card">
+              <input type='checkbox'class="check-box">
+               <a href="#"><button >Add card</button></a>
+             </div>
+           </div>
+      
+           <div class="product" data-name="p-4">
+              <img src="FRUITS/avocado-halves.webp" alt="">
+              <h3>Avacadoes</h3>
+              <div class="price">180.00Rs</div>
+              <div class="Quantity">
+                <lable>kgs :</lable>
+                <input type="number" min="1" max="10" value="1">
+              </div>
+              <div class="select-card">
+              <input type='checkbox'class="check-box">
+               <a href="#"><button >Add card</button></a>
+             </div>
+           </div>
+           <div class="product" >
+            <img src="FRUITS/pappaya.jpg" alt="">
+            <h3>Pappaya</h3>
+            <div class="price">90.00Rs</div>
+            <div class="Quantity">
+              <lable>kgs :</lable>
+              <input type="number" min="1" max="10" value="1">
+            </div>
+            <div class="select-card">
+            <input type='checkbox'class="check-box">
+             <a href="#"><button >Add card</button></a>
+           </div>
+         </div>
+      
+        </div>
+        </div>
+         </div>
+         </div>
+         <!--chocolates-->      
+           
+          <div class="container">
+
+            <h3 class="title"> Chocolates </h3>
+          
+            <div class="products-container">
+          
+               <div class="product" >
+                  <img src="chocolates/Hershey's chocolate.jpg" alt="">
+                  <h3>Hershey's</h3>
+                  <div class="price">Rs70.00</div>
+                  <div class="Quantity">
+                    <lable>No of packets :</lable>
+                    <input type="number" min="1" max="10" value="1">
+                  </div>
+                  <div class="select-card">
+                  <input type='checkbox'class="check-box">
+                   <a href="#"><button >Add card</button></a>
+                 </div>
+               </div>
+          
+               <div class="product" >
+                  <img src="chocolates/kit-kat.jpg" alt="">
+                  <h3>Kit-Kat</h3>
+                  <div class="price">Rs 25.00</div>
+                  <div class="Quantity">
+                    <lable>No of Packets :</lable>
+                    <input type="number" min="1" max="10" value="1">
+                  </div>
+                  <div class="select-card">
+                  <input type='checkbox'class="check-box">
+                   <a href="#"><button >Add card</button></a>
+                 </div>
+               </div>
+          
+               <div class="product" >
+                  <img src="chocolates/Milky way.png" alt="">
+                  <h3>MilkyWays</h3>
+                  <div class="price">Rs10.00</div>
+                  <div class="Quantity">
+                    <lable>No of Packets :</lable>
+                    <input type="number" min="1" max="10" value="1">
+                  </div>
+                  <div class="select-card">
+                  <input type='checkbox'class="check-box">
+                   <a href="#"><button >Add card</button></a>
+                 </div>
+               </div>
+          
+               <div class="product" data-name="p-4">
+                  <img src="chocolates/milkybar-chocolate.jpg" alt="">
+                  <h3>Milkybar</h3>
+                  <div class="price">Rs10.00</div>
+                  <div class="Quantity">
+                    <lable>No of packets :</lable>
+                    <input type="number" min="1" max="10" value="1">
+                  </div>
+                  <div class="select-card">
+                  <input type='checkbox'class="check-box">
+                   <a href="#"><button >Add card</button></a>
+                 </div>
+               </div>
+          
+               <div class="product" >
+                  <img src="chocolates/munch_chocolate.jpg" alt="" width="150px">
+                  <h3>Munch</h3>
+                  <div class="price">Rs5.00</div>
+                  <div class="QuantitY">
+                    <lable>No of packets :</lable>
+                    <input type="number" min="1" max="10" value="1">
+                  </div>
+                  <div class="select-card">
+                  <input type='checkbox'class="check-box">
+                   <a href="#"><button >Add card</button></a>
+                 </div>
+               </div>
+             <div class="product" >
+              <img src="chocolates/Snickers chocolate.jpg" alt="">
+              <h3>Snickers</h3>
+              <div class="price">Rs10.00</div>
+              <div class="Quantity">
+                <lable>No of packets :</lable>
+                <input type="number" min="1" max="10" value="1">
+              </div>
+              <div class="select-card">
+              <input type='checkbox'class="check-box">
+               <a href="#"><button >Add card</button></a>
+             </div>
+           </div>
+           <div class="product" >
+            <img src="chocolates/Galaxy chocolate.jpg" alt="">
+            <h3>Gallaxy</h3>
+            <div class="price">Rs 20.00</div>
+            <div class="Quantity">
+              <lable>No of packets :</lable>
+              <input type="number" min="1" max="10" value="1">
+            </div>
+            <div class="select-card">
+            <input type='checkbox'class="check-box">
+             <a href="#"><button >Add card</button></a>
+           </div>
+         </div>
+            </div>
+            </div>
+             
+            <div class="container">
+
+              <h3 class="title"> Biscuits</h3>
+            
+              <div class="products-container">
+            
+                 <div class="product" >
+                    <img src="biscuits/cadbury-oreo.jpg" alt="">
+                    <h3>Oreo</h3>
+                    <div class="price">Rs10.00</div>
+                    <div class="Quantity">
+                      <lable>No of packets :</lable>
+                      <input type="number" min="1" max="10" value="1">
+                    </div>
+                    <div class="select-card">
+                    <input type='checkbox'class="check-box">
+                     <a href="#"><button >Add card</button></a>
+                   </div>
+                 </div>
+            
+                 <div class="product" >
+                    <img src="biscuits/good dayy.png" alt="">
+                    <h3>GoodDay</h3>
+                    <div class="price">Rs10.00</div>
+                    <div class="Quantity">
+                      <lable>No of packets :</lable>
+                      <input type="number" min="1" max="10" value="1">
+                    </div>
+                    <div class="select-card">
+                    <input type='checkbox'class="check-box">
+                     <a href="#"><button >Add card</button></a>
+                   </div>
+                 </div>
+            
+                 <div class="product" >
+                    <img src="biscuits/bourbon.jpeg" alt="">
+                    <h3>Bourbon</h3>
+                    <div class="price">Rs30.00</div>
+                    <div class="Quantity">
+                      <lable>No of packets :</lable>
+                      <input type="number" min="1" max="10" value="1">
+                    </div>
+                    <div class="select-card">
+                    <input type='checkbox'class="check-box">
+                     <a href="#"><button >Add card</button></a>
+                   </div>
+                 </div>
+            
+                 <div class="product" data-name="p-4">
+                    <img src="biscuits/marie gold britania.jpg" alt="">
+                    <h3>Britania MarieGold</h3>
+                    <div class="price">Rs10.00</div>
+                    <div class="Quantity">
+                      <lable>No of packets :</lable>
+                      <input type="number" min="1" max="10" value="1">
+                    </div>
+                    <div class="select-card">
+                    <input type='checkbox'class="check-box">
+                     <a href="#"><button >Add card</button></a>
+                   </div>
+                 </div>
+            
+                 <div class="product" >
+                    <img src="biscuits/dark-fantasy-coffee-f.webp" alt="" width="250px">
+                    <h3>Dark Fantasy</h3>
+                    <div class="price">Rs35.00</div>
+                    <div class="Quantity">
+                      <lable>No of packets :</lable>
+                      <input type="number" min="1" max="10" value="1">
+                    </div>
+                    <div class="select-card">
+                    <input type='checkbox'class="check-box">
+                     <a href="#"><button >Add card</button></a>
+                   </div>
+                 </div>
+              <div class="product" >
+                <img src="biscuits/Parle G.jpg" alt="">
+                <h3>Parle G</h3>
+                <div class="price">Rs25.00</div>
+                <div class="Quantity">
+                  <lable>No of packets :</lable>
+                  <input type="number" min="1" max="10" value="1">
+                </div>
+                <div class="select-card">
+                <input type='checkbox'class="check-box">
+                 <a href="#"><button >Add card</button></a>
+               </div>
+             </div>
+          </div>
+          </div>
+               
+              <div class="container">
+    
+                <h3 class="title"> Biscuits </h3>
+              
+                <div class="products-container">
+              
+                   <div class="product" >
+                      <img src="biscuits/Jim-Jam-Web.jpg" alt="" width="250px">
+                      <h3>Jim-Jam</h3>
+                      <div class="price">Rs50.00</div>
+                      <div class="Quantity">
+                        <lable>No of packets :</lable>
+                        <input type="number" min="1" max="10" value="1">
+                      </div>
+                      <div class="select-card">
+                      <input type='checkbox'class="check-box">
+                       <a href="#"><button >Add card</button></a>
+                     </div>
+                   </div>
+              
+                   <div class="product" >
+                      <img src="biscuits/karachi biscuots.jpg" alt="">
+                      <h3>Karachi</h3>
+                      <div class="price">Rs100.00</div>
+                      <div class="Quantity">
+                        <lable>No of packets :</lable>
+                        <input type="number" min="1" max="10" value="1">
+                      </div>
+                      <div class="select-card">
+                      <input type='checkbox'class="check-box">
+                       <a href="#"><button >Add card</button></a>
+                     </div>
+                   </div>
+              
+                   <div class="product" >
+                      <img src="biscuits/-MOM-MAGIC.jpg" alt="">
+                      <h3>Moms-Magic</h3>
+                      <div class="price">Rs10.00</div>
+                      <div class="Quantity">
+                        <lable>No of packets :</lable>
+                        <input type="number" min="1" max="10" value="1">
+                      </div>
+                      <div class="select-card">
+                      <input type='checkbox'class="check-box">
+                       <a href="#"><button >Add card</button></a>
+                     </div>
+                   </div>
+              
+                   <div class="product" data-name="p-4">
+                      <img src="biscuits/nuti choise digestive.webp" alt="">
+                      <h3>Nutri Choice Digestive</h3>
+                      <div class="price">Rs25.00</div>
+                      <div class="Quantity">
+                        <lable>No of packets :</lable>
+                        <input type="number" min="1" max="10" value="1">
+                      </div>
+                      <div class="select-card">
+                      <input type='checkbox'class="check-box">
+                       <a href="#"><button >Add card</button></a>
+                     </div>
+                   </div>
+              
+                   <div class="product" >
+                      <img src="biscuits/pantanjali.jpg" alt="" width="250px">
+                      <h3>Patanjali</h3>
+                      <div class="price">Rs25.00</div>
+                      <div class="Quantity">
+                        <lable>No of packets :</lable>
+                        <input type="number" min="1" max="10" value="1">
+                      </div>
+                      <div class="select-card">
+                      <input type='checkbox'class="check-box">
+                       <a href="#"><button >Add card</button></a>
+                     </div>
+                   </div>
+                   <div class="product" >
+                    <img src="biscuits/50-50.webp" alt="" width="250px">
+                    <h3>50-50</h3>
+                    <div class="price">Rs10.00</div>
+                    <div class="Quantity">
+                      <lable>No of packets :</lable>
+                      <input type="number" min="1" max="10" value="1">
+                    </div>
+                    <div class="select-card">
+                    <input type='checkbox'class="check-box">
+                     <a href="#"><button >Add card</button></a>
+                   </div>
+                 </div>
+                </div>
+                </div>
+
+        </form>
+        <input type="submit" form="nameform" class="form-submit-button" value="Submit_cart">   
+
+
+
+
+</header>
+<!------- js for toggle menu------->
+         <script type="text/javascript">
+          var menuItems=document.getElementById('menuItems')
+          menuItems.style.maxHeight="0px"
+          function menutoggle(){
+            if(menuItems.style.maxHeight=="0px"){
+              menuItems.style.maxHeight="200px"
+
+            }
+            else{
+              menuItems.style.maxHeight="0px"
+            }
+          }
+         </script>
+</body>
+</html>

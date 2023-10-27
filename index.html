@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Work+Sans:ital,wght@0,300;1,200;1,300&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a46b5c1927.js" crossorigin="anonymous"></script>
+
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="navbar">
+					<div class="logo">
+					<IMG SRC="g4g-logo-video-nbg.gif" width="220px">
+				    </div>
+					<nav>
+						<ul id="menuItems">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="Products.html">Product</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">contact</a></li>
+							<li><a href="g4g_Account.html">Account</a></li>
+						</ul>
+					</nav>
+					<a href=""><img src="card_logo.png" width="30px"></a>
+					<img src="menu_logo.png" class="menu-icon" onclick="menutoggle()">
+				</div>
+			</div>
+			<div class="row-1">
+				<div class="col-1">
+                  <img src="bag_goods.png" width="580px"> 
+				</div>
+				<div class="col-2">
+					<h1>"Go for Groceries"</h1>
+					<p>
+						We wish this home friendly website makes you happy!
+						<br>
+						Happy customer,Happy we!
+
+					</p>
+				</div>
+			</div>
+			<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+		 <df-messenger
+		   intent="WELCOME"
+		   chat-title="G4G_BOT"
+		   agent-id="02685fdc-8da0-4368-827e-8fe4ca02da9e"
+		   language-code="en"
+		 ></df-messenger>
+		 <style>
+			df-messenger {
+			 --df-messenger-bot-message: #3f93ec;
+			 --df-messenger-button-titlebar-color: #cc83b2;
+			 --df-messenger-chat-background-color: hsla(0, 60%, 98%, 0.575);
+			 --df-messenger-font-color: rgba(3, 13, 4, 0.963);
+			 --df-messenger-send-icon: #878fac;
+			 --df-messenger-user-message: #91f3b2;
+			}
+		  </style>
+
+		</header>
+		<!----footer--->
+         <footer class="footer-distributed">
+
+			<div class="footer-left">
+            
+				<img src="g4g_logo1.png" width="80px">
+
+				<p class="footer-links">
+					        <a href="index.html">Home</a>
+							<a href="g4g_Account.html">Product</a>
+							<a href="#">About</a>
+							<a href="#">contact</a>
+							<a href="g4g_Account.html">Account</a>
+					
+				</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					
+					<p><span>Kiet group of institutions</span> Korangi,Kakinada</p>
+				</div>
+
+				<div>
+					
+					<p>9573321186</p>
+
+				</div>
+
+				<div>
+					
+					<p><a href="#">amaranadh123@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About the company</span>
+					
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.google.co.in" target="blank"><i class="fa-brands fa-google"></i></a>
+         			<a href="https://www.facebook.com" target="blank"><i class="fa-brands fa-facebook-f"></i></a>
+         			<a href="http://in.youtube.com/" target="blank"><i class="fa-brands fa-youtube"></i></a>
+         			<a href="https://twitter.com" target="blank"><i class="fa-brands fa-twitter"></i></a>
+         			<a href="https://www.instagram.com" target="blank"><i class="fa-brands fa-instagram-square"></i></a>
+
+				</div>
+				
+
+			</div>
+			
+
+		</footer>
+         <!------- js for toggle menu------->
+         <script type="text/javascript">
+         	var menuItems=document.getElementById('menuItems')
+         	menuItems.style.maxHeight="0px"
+         	function menutoggle(){
+         		if(menuItems.style.maxHeight=="0px"){
+         			menuItems.style.maxHeight="200px"
+
+         		}
+         		else{
+         			menuItems.style.maxHeight="0px"
+         		}
+         	}
+         </script>
+		 </script>
+	</body>
+</html>
